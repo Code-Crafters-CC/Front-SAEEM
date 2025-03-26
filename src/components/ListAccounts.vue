@@ -61,7 +61,6 @@ export default {
             axios.get('accountData/')
                 .then(response => {
                     this.listAccounts = response.data;
-                    console.log(this.listAccounts);
                 })
                 .catch(function (error){
                     console.log(error)
@@ -73,7 +72,6 @@ export default {
             axios.get('users/')
                 .then(response => {
                     this.listUser = response.data;
-                    console.log(this.listUser);
                 })
                 .catch(function (error){
                     console.log(error)
